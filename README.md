@@ -1,17 +1,23 @@
 Titanic Survival Prediction (Machine Learning Project)
+
 Project Overview :- 
+
 This project predicts whether a passenger survived the Titanic disaster using machine learning models. The goal is to analyze passenger data and build models that can accurately classify survival outcomes.
 
->>Dataset
+>>Dataset:- 
+
 Source: Kaggle Titanic Dataset
 
->>Features include:
+>>Features include:-
+
 Age, Sex, Passenger Class, Fare, Embarked, Family Size, Alone
 
->>Problem Type
+>>Problem Type:-
+>>
 Binary Classification :- Target Variable: Survived (0 = No, 1 = Yes)
 
 >>Steps Performed:-
+
 1. Data Preprocessing
 Handled missing values:
 Age → filled with median
@@ -42,28 +48,34 @@ The following models were implemented:
 | Bagging (Decision Tree Classifier)     | 80.45%       | 86.51%        | 0.80     | 0.90   | Improved stability   |
 | Random Forest                          | 81.01%       | 85.81%        | 0.80     | 0.90   | Best overall model   |
 
->> Final Model:- Random Forest was selected as the final model due to:
+>> Final Model:-
+
+Random Forest was selected as the final model due to:
 1) Highest test accuracy (81.01%)
 2) Balanced precision and recall
 3) Controlled overfitting compared to deeper trees
 
->> Key Observations
-Logistic Regression showed strong baseline performance with high stability
-Decision Tree had high recall but lower precision (over-predicting survival)
-Ensemble methods improved performance by reducing variance
+>> Key Observations:-
 
->> Future Improvements
-Feature engineering:
-Extract titles from names (Mr, Miss, etc.)
-Age and Fare binning
-Hyperparameter tuning using GridSearchCV
-Trying advanced models like XGBoost
+1) Logistic Regression showed strong baseline performance with high stability
+2) Decision Tree had high recall but lower precision (over-predicting survival)
+3) Ensemble methods improved performance by reducing variance
 
->> Technologies Used
+>> Future Improvements:-
+
+1) Feature engineering:
+2) Extract titles from names (Mr, Miss, etc.)
+3) Age and Fare binning
+4) Hyperparameter tuning using GridSearchCV
+4) Trying advanced models like XGBoost
+
+>> Technologies Used:-
+
 Python
 Pandas, NumPy
 Scikit-learn
 Matplotlib, Seaborn
 
 >> Conclusion:-
+
 This project demonstrates how different machine learning models perform on a classification problem and highlights the importance of feature engineering and model evaluation.
